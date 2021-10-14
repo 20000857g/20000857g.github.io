@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en-US">>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="Venice Fung">
+<meta name="keywords" content="Hong Kong Polytechnic University, 香港理工大學">
+<title>Venice Fung - The Hong Kong Polytechnic University</title>
+
+<style>
+
+body{
+	margin:0;
+	padding:0px;
+	max-width: 100%; 
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+#home{
+	padding:30px 50px;
+	position:relative;
+	width:100%;
+	height: 100vh;
+	box-sizing: border-box;
+	background-size:1330px;
+	background-repeat: no-repeat;
+	background-image: url("home_bg1.jpg");
+	background-color: #edf1fd;
+}
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri,Arial, Helvetica;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color:#F4F7FF;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+	z-index: 1;
+}
+ 
+.menu{
+	display: flex;
+	height:90%;
+}
+.menu li a{
+	padding: 10px 15px;
+	color:#6c707c;
+	font-size: 12px;
+}
+.logo{
+	font-size: 25px;
+	font-weight: bold;
+	color:#292929;
+	font-family:Poppins,calibri,Arial;
+}
+.toggle{
+	display: none;
+	height:90%;
+}
+.active a,
+.menu li a:hover{
+	background-color:#292929;
+	color:#FFF!important;
+	font-weight: bold;
+	transition: all ease 0.4s;
+	transform: translateY(4px);
+}
+
+.name{
+	font-family: calibri,Arial, Helvetica;
+	width: 1200px;
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	transform: translate(-20%,-50%);
+	text-align:center;
+}
+.name p:nth-child(1),.name .details{
+	color:#6c707c;
+	font-size: 20px;
+	text-align:center;
+}
+.name h1{
+	font-family:calibri,Arial, Helvetica;
+	font-size: 40px;
+	margin:0px;
+	letter-spacing: 3px;
+	color:#292929;
+	text-align:center;
+	animation-name: myname;
+    animation-duration: 5s;
+	animation-iteration-count: 1;
+}
+
+@keyframes myname{
+  0%   {transform: rotate(0deg);}
+  25%   {transform: rotate(-15deg);}
+  75%  {transform: rotate(15deg);}
+  100% {transform: rotate(0deg);}
+}
+
+#aboutstudy{
+	width:100%;
+	height: 100%;
+	background-color:#161616;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px 5% 0px 5%;
+	position: relative;
+	background-size:1330px 750px;
+	background-repeat: no-repeat;
+	background-image: url("PolyU.jpg");
+
+}
+
+table, th, td {
+  border: 2px solid #ffcc66;
+  padding:5px;
+  border-collapse: collapse;
+}
+tr:nth-child(even) {
+  background-color: background-color: #f2f2f2;
+}
+
+tr:hover {background-color: #ddd;}
+
+th{
+background-color:#ffcc66;
+}
+
+.tablecenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#aboutwork{
+	width:100%;
+	height: 100%;
+	background-color:#161616;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px 5% 0px 5%;
+	position: relative;
+	background-size:1300px 750px;
+	background-repeat: no-repeat;
+	background-image: url("lab.jpg");
+}
+
+#abouthabit{
+	width:100%;
+	height: 100%;
+	background-color:#161616;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px 5% 0px 5%;
+	position: relative;
+	background-size:1300px 750px;
+	background-repeat: no-repeat;
+	background-image: url("relax.jpg");
+}
+
+.about-text{
+	font-family: calibri,Arial, Helvetica;
+	width: 55%;
+	border-style: 1px solid black;
+	background-color: white;
+	opacity: 0.9;
+	border: 10px solid transparent;
+	border-radius: 25px;
+    padding: 1px;
+    border-image: url(border.jpg) 30 stretch;
+	text-indent: 50px;
+	
+}
+.about-text h1{
+    text-shadow: 3px 2px grey;
+	margin: 0px;
+	padding: 0px;
+	font-size: 2.2rem;
+	color:#ffcc00;
+	text-align: center;
+	text-transform: capitalize;
+	text-decoration: underline;	
+	animation-name: aboutheader;
+    animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes aboutheader{
+  25% {transform: translate(50px);}
+  75% {transform: translate(-50px);}
+}
+
+.about-text p{
+	font-size: 0.8rem;
+	color:black;
+}
+
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+.pointer {cursor: pointer;}
+
+#contact-form{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size:1330px;
+	background-repeat: no-repeat;
+	background-image: url("home_bg1.jpg");
+	background-color: #edf1fd;
+	
+}
+#contact-form form{
+	display: flex;
+	width: 65%;
+	height: 70vh;
+	box-shadow: 2px 12px 20px rgba(0,0,0,0.2);
+	border: 1px solid rgba(255,255,255,0.01);
+	font-size: 0.9em;
+	background-repeat: no-repeat;
+	background-image: url("form.jpg");
+	background-size:55rem;
+}
+ 
+.contact-left{
+	width: 45%;
+	height: 100%;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 70%;
+}
+.contact-right{
+	width: 60%;
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-left: 1px solid rgba(255,255,255,0.08);
+}
+
+.contact-right button{
+	width:45%;
+	height: 20px;
+	background-color: #ffcc00;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	margin: 2px;
+	color:#1B1B1B;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	display: inline-block;
+	border-radius: 15px;
+	box-shadow: 0 6px #999;
+}
+
+.contact-right button:hover 
+{background-color: #ffbb33;
+width:52%;
+height: 23px;
+}
+
+.contact-right button:active {
+  background-color: #ffbb33;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.c-l-heading{
+	font-family: calibri,Arial, Helvetica;
+	color:#FFFFFF;
+	font-size: 3rem;
+	letter-spacing: 2px;
+	font-weight: 400;
+	animation-name: emailheading;
+    animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes emailheading{
+  0%   {transform: skewX(-20deg);}
+  50%  {transform: skewX(20deg);}
+  100% {transform: skewX(-20deg);}
+}
+
+
+.f-name,.f-phone,.f-email{
+	display: flex;
+	flex-direction: column;
+	font-family: calibri,Arial, Helvetica;
+	
+}
+.f-name font,.f-phone font,.f-email font{
+	color:#ffcc00;
+	font-size: 22px;
+	font-weight: bold;
+}
+.f-name input,.f-phone input,.f-email input{
+	height: 30px;
+	width:250px;
+	border: none;
+	outline: none;
+	background-color:transparent;
+	border-bottom: 1px solid #929292;
+	color:#FFFFFF;
+	margin: 10px 0px;
+}
+.f-name input::placeholder,
+.f-phone input::placeholder,
+.f-email input::placeholder{
+	opacity: 0.8;
+	letter-spacing: 1px;
+	color:#FFFFFF;
+}
+.f-name input:focus,
+.f-phone input:focus,
+.f-email input:focus{
+	border-bottom: 1px solid #ffcc00;
+	transition: all ease 0.5s;
+	
+}.message font{
+	font-size: 18px;
+	color:#FFFFFF;
+	font-family: calibri,Arial, Helvetica;
+	
+}
+.message{
+	margin: 20px;
+	font-size: 22px;
+	
+}
+.contact-right textarea{
+	width: 100% !important;
+	height: 320px !important;
+	border: none;
+	outline: none;
+	background-color:transparent;
+	box-sizing: border-box;
+	color:#FFFFFF;
+	font-size: 16px;
+}
+.contact-right textarea::placeholder{
+	color:#FFFFFF;
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: calibri,Arial, Helvetica;
+}
+.contact-right button:active{
+	transform: scale(1.04);
+	transition: all ease 0.1s;
+}
+
+iframe {
+  height: 500px;
+  width: 600px;
+  resize: both;
+  overflow: auto;
+}
+
+select {
+  color:#1B1B1B;;
+  background-color: #ffcc00;
+  border-width: 1px;
+  font-size: 14px;
+
+}
+
+</style>
+</head>
+<body>
+
+
+<!--navigation-->
+<nav>
+	<p> <a href="#home">Venice Fung's Introduction</a></p>
+<!--menu-->
+	<div class="toggle"></div>
+	<ul class="menu">
+	<li class="active"><a href="#home">Home</a></li>	
+	<li><a href="#aboutstudy">Study</a></li>	
+	<li><a href="#aboutwork">Work</a></li>
+    <li><a href="#abouthabit">Interest</a></li>	
+	<li><a href="#contact-form">Contact</a></li>	
+	</ul>
+</nav>
+
+
+<section id="home">
+	<div class="name">
+	<img src="Photo.png" alt="Venice Fung Photo" style="border-radius:50%; width:190px; height:230px">
+	<p>&nbsp &nbsp &nbsp Hello Everyone, Nice to meet you here! Welcome to my page!</p>
+	<h1>&nbsp This is <em><span style = "color:#ffcc00">Fung Lok Yin, Venice</span></em></h1>
+	<p class="details">
+    An outgoing and passionate youngster with professional knowledge in IT, e-health and business &#128187;<br>
+	An enthusiastic swimmer, guitar lover and yoga learner with great determination to explore every avenue &#128170;
+    </p>
+	</div>
+ </section>
+
+
+<section id="aboutstudy">
+	<div class="about-text">
+	<h1>About Study</h1>
+	<table class="tablecenter">
+	<!-- <caption>Study Details</caption>-->
+	<tr>
+	<th>Date Period</th>
+	<th>Education</th>
+	</tr>
+	
+	<tr>
+	<td rowspan="1">Sep 2020 - Present</td>
+	<td><b><u><a href="https://www.polyu.edu.hk/en/fhss/study/postgraduate/mschi/" target="_blank"> Master of Science in Health Informatics </a></b></u>
+    <br> 
+	<i>- Hong Kong Polytechnic University</i>
+	<br>- 2-years Part-time study
+	</td> 
+	</tr>
+	
+    <tr>
+	<td rowspan="1">Sep 2014 - Jun 2018</td>
+	<td><b><u><a href="http://bcda.comp.hkbu.edu.hk/" target="_blank">*Bsc. (Hons) in Computing and Information System<a></b></u>
+	<br><i>- Hong Kong Baptist University</i>
+    <br>- Minor in Business
+	<br>- First Class Honour
+	<br>- Academic Awards:
+	<ul style="list-style-type:disc;">
+   <li>2014-2016 Presidents Honour Roll</li>
+   <li>2016-2017 Dean's List</li>
+   <li>2015/2016 Outstanding Student Scholarship</li>
+</ul>  
+	</td> 
+	</tr>
+	
+	<tr>
+	<td rowspan="1">Jul 2015 - Aug 2015</td>
+	<td><b><u><a href="https://summercourse.sce.sjtu.edu.cn/web/index.php" target="_blank"> International Summer Term Exchange Programme</a></b></u>
+    <br> 
+	<i>- Shanghai Jiao Tong University</i>
+	<br>- Course: Arts and Skills of Interpersonal Communication
+	</td> 
+	</tr>
+	</table>	
+<pre>     *Now renamed as BSc (Hons) in Business Computing and Data Analytics</pre>
+	</div> 
+	<div class="about-model">
+	</div> 
+	
+
+</section>
+
+<section id="aboutwork">
+
+	<div class="about-model">
+	</div> 
+	<div class="about-text" style= "margin-right: 0;">
+	<h1>About Work</h1>
+	<fieldset>
+	<legend>Hospital Authority</legend>
+	<pre>
+<u>July 2018 - Present:</u>
+I have been worked as a <strong><b>Business Analyst</strong></b> in <abbr title="Hospital Authority">HA</abbr> IT&HI departent in previous 
+three years. My duty is to provide user support for Lab Information System(LIS) 
+to ensure the delivery of LIS products fit both public/private hospitals'need:
+- To prepare laboratory test setup and analyzer setup
+- Collect users' requirements from lab users and liaise with system developers 
+  for system maintenance and enhancement
+- Perform Quality Assurance process for LIS products
+	
+<u>June 2017 - Auguest 2017:</u>
+I worked as an <strong><b>Summer Intern</strong></b> in HA during my university study. 
+At that ten weeks, I was mainly responsible for on-site support and user 
+training at public hospitals. Regression testing and UAT of Impatient Medication 
+Order Entry (IPMOE) system is also performed to maintain the quality of the 
+system modules.
+	</pre>
+	</fieldset>
+	
+	<fieldset>
+	<legend>Standard Chartered Hong Kong</legend>
+	<pre>
+<u>May 2018 - July 2018:</u>
+I worked as a  <strong><b>Project Analyst</strong></b> in IT depatment of Standard Chartered Hong Kong. 
+My duty was to prepare, review, and maintain project documentation and reports.
+I also assited at performing in UAT testing for new feature implemented for
+securities services on mobile platform. 
+</pre>
+	</fieldset>
+	</div>
+	
+</section>
+
+<section id="abouthabit">
+
+	<div class="about-text" style= "margin-right: 0;">
+	<h1>About Interest</h1>
+	<dl>
+	<h2><dt class="pointer" onclick="document.getElementById('myHabit').src='yoga.jpg'" title='Click me to see yoga picture'>Yoga</dt></h2>
+	<dd>I enjoy both floor yoga and aerial yoga since I was 20.
+	It offers me both physical and mental health benefits, such as improving my muscle balance and flexibility.
+	After practicing yoga, I find myself sleep better as yoga can lead me to get into a clear and right mindset.
+	I can get rid of any stress when I get forcued and concentrated on deep breathing.
+	</dd>
+	
+	<h2><dt class="pointer" onclick="document.getElementById('myHabit').src='https://www.youtube.com/embed/SkogDQkeGVs'" title='Click me to listen to guitar music'>Guitar</dt></h2>
+	<dd>Have you ever heard of music therpy?
+    Playing music intrument will help your body and mind with immense benefits! To me, learning guitar helped me
+	to train my eye and hand coordination when I read chords and patterns.It also helps me to kick anxiety out since
+	I can express your emotion while playing guitar. This made me relieve my stress from daily work.
+	</dd>
+	
+	<h2><dt class="pointer" onclick="document.getElementById('myHabit').src='swim1.gif'" title='Click me to see swimming gif'>Swimming</dt></h2>
+	<dd>Swimming is a great workout because you need to move your whole body against the resistance of the water.
+	It helps to keeps our heart rate up but takes some of the impact stress off our body.
+	If you would like to achieve cardiovascular fitness, swimming is a good method to help you maintain a healthy weight, healthy heart and lungs.
+	</dd>
+	
+	</dl>
+	</div>
+		
+	<div class="about-model">
+	<iframe id="myHabit" frameborder='0' scrolling='no' src='' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media" ></iframe>
+	</div> 
+	
+</section>
+
+
+<section id="contact-form">
+	<form action="mailto:venicefung.cds@gmail.com?subject=Email to Venice Fung" method="post" enctype="text/plain" autocomplete="off" >
+	<!--left-->
+	<div class="contact-left">
+	<h1 class="c-l-heading"><font style="border-bottom: 2px solid #ffcc00;">Email Me</font></font></h1>
+	<!--name-->
+	<div class="f-name">
+    <select id="gender" name="Gender">
+    <option value="Mrs" selected>Mrs.</option>
+    <option value="Miss">Miss.</option>
+    <option value="Mr">Mr.</option>
+    </select>
+	<br>
+	<br>
+	<br>
+	<font>Name</font>
+	<input type="text" name="Name" placeholder="Chan Tai Man" required/>
+	<br>
+	</div>
+	<!--phone-->
+	<div class="f-phone">
+	<font>Phone</font>
+    <input type="tel" name="Phone" maxlength="8" placeholder="12345678">
+	<br>
+	</div>
+	<!--email-->
+	<div class="f-email">
+	<font>Email</font>
+	<input type="email" name="Email" placeholder="abcd@gmail.com" required/>
+	</div>
+	</div>
+	<!--right-->
+	<div class="contact-right">
+	<!--message-->
+	<div class="message">
+	<font>Write Your Message Here:</font>
+	<textarea name="Message" rows="5" cols="20"></textarea>
+	</div>
+	<div>
+	<!--reset and submit-btn-->
+	 <button type="reset" value="Reset">Reset</button>
+	 <button type="submit" value="Submit">Submit</button>
+    </div>
+	</form>
+</section>
+	
+</body>
+</html>
