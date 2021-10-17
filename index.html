@@ -26,7 +26,7 @@ a{
 	width:100%;
 	height: 100vh;
 	box-sizing: border-box;
-	background-size:1330px;
+	background-size:cover;
 	background-repeat: no-repeat;
 	background-image: url("home_bg1.jpg");
 	background-color: #edf1fd;
@@ -57,10 +57,10 @@ nav{
 .menu li a{
 	padding: 10px 15px;
 	color:#6c707c;
-	font-size: 12px;
+	font-size: 0.8rem;
 }
 .logo{
-	font-size: 25px;
+	font-size: 20vw;
 	font-weight: bold;
 	color:#292929;
 	font-family:Poppins,calibri,Arial;
@@ -80,21 +80,26 @@ nav{
 
 .name{
 	font-family: calibri,Arial, Helvetica;
-	width: 1200px;
+	width: 100%;
 	position: absolute;
 	left: 20%;
 	top: 50%;
 	transform: translate(-20%,-50%);
 	text-align:center;
 }
+
+.name p{
+font-size: 1.2vw;
+}
+
 .name p:nth-child(1),.name .details{
 	color:#6c707c;
-	font-size: 20px;
+	font-size: 1.5vw;
 	text-align:center;
 }
 .name h1{
 	font-family:calibri,Arial, Helvetica;
-	font-size: 40px;
+	font-size: 4vw;
 	margin:0px;
 	letter-spacing: 3px;
 	color:#292929;
@@ -121,7 +126,7 @@ nav{
 	justify-content: space-between;
 	padding: 50px 5% 0px 5%;
 	position: relative;
-	background-size:1330px 750px;
+	background-size:cover;
 	background-repeat: no-repeat;
 	background-image: url("PolyU.jpg");
 
@@ -131,6 +136,7 @@ table, th, td {
   border: 2px solid #ffcc66;
   padding:5px;
   border-collapse: collapse;
+  font-size: 1.2vw;
 }
 tr:nth-child(even) {
   background-color: background-color: #f2f2f2;
@@ -155,9 +161,8 @@ background-color:#ffcc66;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 50px 5% 0px 5%;
 	position: relative;
-	background-size:1300px 750px;
+	background-size:cover;
 	background-repeat: no-repeat;
 	background-image: url("lab.jpg");
 }
@@ -172,7 +177,7 @@ background-color:#ffcc66;
 	justify-content: space-between;
 	padding: 50px 5% 0px 5%;
 	position: relative;
-	background-size:1300px 750px;
+	background-size:cover;
 	background-repeat: no-repeat;
 	background-image: url("relax.jpg");
 }
@@ -194,7 +199,7 @@ background-color:#ffcc66;
     text-shadow: 3px 2px grey;
 	margin: 0px;
 	padding: 0px;
-	font-size: 2.2rem;
+	font-size: 3.3vw;
 	color:#ffcc00;
 	text-align: center;
 	text-transform: capitalize;
@@ -210,21 +215,28 @@ background-color:#ffcc66;
 }
 
 .about-text p{
-	font-size: 0.8rem;
+	font-size: 1.2vw;
 	color:black;
 }
 
 fieldset {
   background-color: #eeeeee;
-}
+    }
 
 legend {
   background-color: gray;
   color: white;
   padding: 5px 10px;
+  outline: 1px;
+  font-size: 1vw;
 }
 
 .pointer {cursor: pointer;}
+
+dl,dd {
+    font-size: 1.2vw;
+	width: 90%;
+}
 
 #contact-form{
 	width: 100%;
@@ -232,7 +244,7 @@ legend {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-size:1330px;
+	background-size:cover;
 	background-repeat: no-repeat;
 	background-image: url("home_bg1.jpg");
 	background-color: #edf1fd;
@@ -240,18 +252,18 @@ legend {
 }
 #contact-form form{
 	display: flex;
-	width: 65%;
+	width: 70%;
 	height: 70vh;
 	box-shadow: 2px 12px 20px rgba(0,0,0,0.2);
 	border: 1px solid rgba(255,255,255,0.01);
-	font-size: 0.9em;
+	font-size: 1vw;
 	background-repeat: no-repeat;
 	background-image: url("form.jpg");
-	background-size:55rem;
+	background-size:cover;
 }
  
 .contact-left{
-	width: 45%;
+	width: 40%;
 	height: 100%;
 	max-width: 100%;
 	display: flex;
@@ -271,14 +283,14 @@ legend {
 
 .contact-right button{
 	width:45%;
-	height: 20px;
+	height: 90%;
 	background-color: #ffcc00;
 	font-weight: bold;
 	outline: none;
 	border: none;
-	margin: 2px;
+	margin: 1px;
 	color:#1B1B1B;
-	font-size: 14px;
+	font-size: 1vw;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 	display: inline-block;
@@ -289,7 +301,7 @@ legend {
 .contact-right button:hover 
 {background-color: #ffbb33;
 width:52%;
-height: 23px;
+height: 100%;
 }
 
 .contact-right button:active {
@@ -302,7 +314,7 @@ height: 23px;
 .c-l-heading{
 	font-family: calibri,Arial, Helvetica;
 	color:#FFFFFF;
-	font-size: 3rem;
+	font-size: 4vw;
 	letter-spacing: 2px;
 	font-weight: 400;
 	animation-name: emailheading;
@@ -325,12 +337,12 @@ height: 23px;
 }
 .f-name font,.f-phone font,.f-email font{
 	color:#ffcc00;
-	font-size: 22px;
+	font-size: 1.8vw;
 	font-weight: bold;
 }
 .f-name input,.f-phone input,.f-email input{
-	height: 30px;
-	width:250px;
+	height: 4vh;
+	width:20vw;
 	border: none;
 	outline: none;
 	background-color:transparent;
@@ -352,14 +364,14 @@ height: 23px;
 	transition: all ease 0.5s;
 	
 }.message font{
-	font-size: 18px;
+	font-size: 1.8vw;
 	color:#FFFFFF;
 	font-family: calibri,Arial, Helvetica;
 	
 }
 .message{
-	margin: 20px;
-	font-size: 22px;
+	margin: 18px;
+	font-size: 1.8vw;
 	
 }
 .contact-right textarea{
@@ -370,23 +382,17 @@ height: 23px;
 	background-color:transparent;
 	box-sizing: border-box;
 	color:#FFFFFF;
-	font-size: 16px;
+	font-size: 1.8vw;
 }
-.contact-right textarea::placeholder{
-	color:#FFFFFF;
-	font-size: 18px;
-	letter-spacing: 2px;
-	font-family: calibri,Arial, Helvetica;
-}
+
 .contact-right button:active{
 	transform: scale(1.04);
 	transition: all ease 0.1s;
 }
 
 iframe {
-  height: 500px;
-  width: 600px;
-  resize: both;
+  height: 70vh;
+  width: 70vw;
   overflow: auto;
 }
 
@@ -394,7 +400,7 @@ select {
   color:#1B1B1B;;
   background-color: #ffcc00;
   border-width: 1px;
-  font-size: 14px;
+  font-size: 1vw;
 
 }
 
@@ -420,7 +426,7 @@ select {
 
 <section id="home">
 	<div class="name">
-	<img src="Photo.PNG" alt="Venice Fung Photo" style="border-radius:50%; width:190px; height:230px">
+	<img src="Photo.png" alt="Venice Fung Photo" style="border-radius:50%; width:190px; height:230px">
 	<p>&nbsp &nbsp &nbsp Hello Everyone, Nice to meet you here! Welcome to my page!</p>
 	<h1>&nbsp This is <em><span style = "color:#ffcc00">Fung Lok Yin, Venice</span></em></h1>
 	<p class="details">
@@ -462,6 +468,7 @@ select {
    <li>2016-2017 Dean's List</li>
    <li>2015/2016 Outstanding Student Scholarship</li>
 </ul>  
+    *Now renamed as BSc (Hons) in Business Computing and Data Analytics
 	</td> 
 	</tr>
 	
@@ -474,9 +481,8 @@ select {
 	</td> 
 	</tr>
 	</table>	
-<pre>     *Now renamed as BSc (Hons) in Business Computing and Data Analytics</pre>
 	</div> 
-	<div class="about-model">
+	<div>
 	</div> 
 	
 
@@ -484,40 +490,34 @@ select {
 
 <section id="aboutwork">
 
-	<div class="about-model">
+	<div>
 	</div> 
-	<div class="about-text" style= "margin-right: 0;">
+	<div class="about-text">
 	<h1>About Work</h1>
 	<fieldset>
 	<legend>Hospital Authority</legend>
-	<pre>
+	<p>
 <u>July 2018 - Present:</u>
-I have been worked as a <strong><b>Business Analyst</strong></b> in <abbr title="Hospital Authority">HA</abbr> IT&HI departent in previous 
-three years. My duty is to provide user support for Lab Information System(LIS) 
-to ensure the delivery of LIS products fit both public/private hospitals'need:
-- To prepare laboratory test setup and analyzer setup
-- Collect users' requirements from lab users and liaise with system developers 
-  for system maintenance and enhancement
-- Perform Quality Assurance process for LIS products
-	
-<u>June 2017 - Auguest 2017:</u>
-I worked as an <strong><b>Summer Intern</strong></b> in HA during my university study. 
-At that ten weeks, I was mainly responsible for on-site support and user 
-training at public hospitals. Regression testing and UAT of Impatient Medication 
-Order Entry (IPMOE) system is also performed to maintain the quality of the 
-system modules.
-	</pre>
+<br>I have been worked as a <strong><b>Business Analyst</strong></b> in <abbr title="Hospital Authority">HA</abbr> IT&HI departent in previous 
+three years. 
+<br>My duty is to provide user support for Lab Information System(LIS) to ensure the delivery of LIS products fit both public/private hospitals'need:
+<br>- To prepare laboratory test setup and analyzer setup
+<br>- Collect users' requirements from lab users and liaise with system developers for system maintenance and enhancement
+<br>- Perform Quality Assurance process for LIS products
+	<br><br>
+<u>June 2017 - August 2017:</u>
+<br>I worked as an <strong><b>Summer Intern</strong></b> in HA during my university study. 
+<br>At that ten weeks, I was mainly responsible for on-site support and user training at public hospitals. Regression testing and UAT of Impatient Medication Order Entry (IPMOE) system is also performed to maintain the quality of the system modules.
+	</p>
 	</fieldset>
 	
 	<fieldset>
 	<legend>Standard Chartered Hong Kong</legend>
-	<pre>
+	<p>
 <u>May 2018 - July 2018:</u>
-I worked as a  <strong><b>Project Analyst</strong></b> in IT depatment of Standard Chartered Hong Kong. 
-My duty was to prepare, review, and maintain project documentation and reports.
-I also assited at performing in UAT testing for new feature implemented for
-securities services on mobile platform. 
-</pre>
+<br>I worked as a  <strong><b>Project Analyst</strong></b> in IT depatment of Standard Chartered Hong Kong. My duty was to prepare, review, and maintain project documentation and reports.
+<br>I also assited at performing in UAT testing for new feature implemented for securities services on mobile platform. 
+</p>
 	</fieldset>
 	</div>
 	
@@ -525,7 +525,7 @@ securities services on mobile platform.
 
 <section id="abouthabit">
 
-	<div class="about-text" style= "margin-right: 0;">
+	<div class="about-text">
 	<h1>About Interest</h1>
 	<dl>
 	<h2><dt class="pointer" onclick="document.getElementById('myHabit').src='yoga.jpg'" title='Click me to see yoga picture'>Yoga</dt></h2>
@@ -551,9 +551,8 @@ securities services on mobile platform.
 	</dl>
 	</div>
 		
-	<div class="about-model">
+	<div> </div>
 	<iframe id="myHabit" frameborder='0' scrolling='no' src='' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media" ></iframe>
-	</div> 
 	
 </section>
 
